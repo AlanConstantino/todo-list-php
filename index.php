@@ -20,5 +20,6 @@
                 include 'docs/info-messages.php';
             ?>
         </div>
+
     </body>
 </html>
