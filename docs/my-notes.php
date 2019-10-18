@@ -10,10 +10,14 @@
             <button type="submit" formaction="../index.php">Go back</button>
         </form>
 
+        <form action="delete-note.php" method="POST">
+            <input type="number" name="idToDelete" placeholder="Id To delete">
+            <button type="submit">Delete</button>
+        </form>
+
         <div>
             <?php
-                require 'display-notes.php';
-                include 'info-messages.php';
+                include 'display-notes.php';
             ?>
         </div>
     </body>

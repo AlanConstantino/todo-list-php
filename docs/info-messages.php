@@ -10,4 +10,10 @@
     if (strpos($full_url, 'query=success')){
         exit('<p>Successfully added to my list.</p>');
     }
+    if (strpos($full_url, 'delete=failure')){
+        exit('<p>Failed to delete note. Try again later.</p>');
+    }
+    if (strpos($full_url, 'delete=success')){
+        exit('<p>Successfully deleted note.</p>');
+    }
 ?>
