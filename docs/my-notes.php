@@ -15,10 +15,17 @@
             <button type="submit">Delete</button>
         </form>
 
-        <div>
-            <?php
-                include 'display-notes.php';
-            ?>
-        </div>
+        <table>
+            <thead align="left">
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">title</th>
+                    <th scope="col">description</th>
+                </tr>
+                <tbody>
+                    <?php include 'display-notes.php'; ?>
+                </tbody>
+            </thead>
+        </table>
     </body>
 </html>

@@ -16,9 +16,7 @@
         </form>
         
         <div>
-            <?php
-                include 'docs/info-messages.php';
-            ?>
+            <?php include 'docs/info-messages.php'; ?>
         </div>
 
     </body>

@@ -1,9 +1,8 @@
 <?php
     require 'database.php';
 
-    // if fields are empty, go back to index.php
     if(empty($_POST['title']) || empty($_POST['description'])){
-        exit(header('Location: ../index.php?empty'));
+        exit(header('Location: ../index.php?fields=empty'));
     }
 
     // prepare items for insertion into database
@@ -12,7 +11,7 @@
     $date = mysqli_real_escape_string($db->getConnection(), date('Y-m-d'));
     $description = mysqli_real_escape_string($db->getConnection(), $_POST['description']);
 
-    // query database with a prepared statement
+    // query database with a prepared statement then close after execution
     $sql = "INSERT INTO Tasks (title, date, description) VALUES (?, ?, ?)";
     $stmt = $db->getConnection()->prepare($sql);
     $stmt->bind_param("sss", $title, $date, $description);

@@ -1,7 +1,7 @@
 <?php
     $full_url = "https://$_SERVER[HTTP_HOST] $_SERVER[REQUEST_URI]";
 
-    if (strpos($full_url, 'empty')){
+    if (strpos($full_url, 'fields=empty')){
         exit('<p>One or more fields are empty.</p>');
     }
     if (strpos($full_url, 'query=fail')){
