@@ -2,21 +2,21 @@
     $full_url = "https://$_SERVER[HTTP_HOST] $_SERVER[REQUEST_URI]";
 
     if (strpos($full_url, 'fields=empty')){
-        exit('<p>One or more fields are empty.</p>');
+        exit('One or more fields are empty.');
     }
     if (strpos($full_url, 'query=fail')){
-        exit('<p>Unsuccessful add to database.</p>');
+        exit('Unsuccessful add to database.');
     }
     if (strpos($full_url, 'query=success')){
-        exit('<p>Successfully added to my list.</p>');
+        exit('Successfully added to my list.');
     }
     if (strpos($full_url, 'delete=failure')){
-        exit('<p>Failed to delete note. Try again later.</p>');
+        exit('Failed to delete note. Try again later.');
     }
     if (strpos($full_url, 'delete=success')){
-        exit('<p>Successfully deleted note.</p>');
+        exit('Successfully deleted note.');
     }
     if (strpos($full_url, 'idToDelete=empty')){
-        exit('<p>You didn&rsquo;t specify a number.</p>');
+        exit('You didn&rsquo;t specify a number.');
     }
 ?>

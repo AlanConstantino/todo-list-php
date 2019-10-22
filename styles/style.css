@@ -1,8 +1,100 @@
-/* .box{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 200px 100px;
-} */
-.box textarea[name="description"]{
-    display: block;
+h1 {
+    color: #0061D5;
+    text-align: center;
 }
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.box textarea + button[type=submit]:hover {
+    border: #028058 ;
+    background-color: #028058 ;
+}
+
+.box button{
+    display: block;
+    text-align: center;
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
+    border: solid #0061D5;
+}
+
+.box button:hover {
+    background-color: #0061D5;
+    color: white;
+}
+
+.box input{
+    display: block;
+    outline: none;
+    margin: auto;
+    width: 50%;
+    height: 30px;
+    font-size: 20px;
+    border: solid #0061D5;
+}
+
+.box textarea{
+    font-size: 30;
+    display: block;
+    outline: none;
+    width: 50%;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
+    resize: none;
+    font-size: 17px;
+    border: solid #0061D5;
+}
+
+.box input[type=number] {
+    margin-top: 20px;
+    width: 10%;
+}
+
+.box input + button[type=submit]:hover {
+    border: #BD1148;
+    background-color: #BD1148;
+    color: white;
+}
+
+table {
+    width: 50%;
+    border: solid #0061D5;
+    margin: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th {
+    color: #0061D5;
+}
+
+th, td{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* will have to use javascript to show/hide error messages */
+
+ /* .message {
+    display: block;
+    text-align: center;
+    border: solid #BD1148 ;
+    background-color: #BD1148 ;
+    color: white;
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+} */

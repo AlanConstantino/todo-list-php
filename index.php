@@ -15,8 +15,8 @@
             <button type="submit" formaction="docs/my-notes.php">View My Notes</button>
         </form>
         
-        <div>
-            <?php include 'docs/info-messages.php'; ?>
+        <div class="message">
+            <p><?php include 'docs/info-messages.php'; ?></p>
         </div>
 
     </body>
