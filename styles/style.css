@@ -1,4 +1,8 @@
-.box {
+/* .box{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 200px 100px;
+} */
+.box textarea[name="description"]{
     display: block;
-    width: 100px;
 }

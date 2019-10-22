@@ -6,15 +6,11 @@
     </head>
     <body>
         <h1>My Notes</h1>
-        <form>
-            <button type="submit" formaction="../index.php">Go back</button>
-        </form>
-
         <form action="delete-note.php" method="POST">
+            <button type="submit" formaction="../index.php">Go back</button>
             <input type="number" name="idToDelete" placeholder="Id To delete">
             <button type="submit">Delete</button>
         </form>
-
         <table>
             <thead align="left">
                 <tr>

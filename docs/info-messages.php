@@ -16,4 +16,7 @@
     if (strpos($full_url, 'delete=success')){
         exit('<p>Successfully deleted note.</p>');
     }
+    if (strpos($full_url, 'idToDelete=empty')){
+        exit('<p>You didn&rsquo;t specify a number.</p>');
+    }
 ?>
