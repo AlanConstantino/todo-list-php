@@ -19,7 +19,7 @@
         exit(header('Location: ../index.php?updated=empty'));
     }
 
-    // check if one or the other is empty
+    // check if either variable is empty
     $db = new Database();
     $updatedTitle = (empty($_POST['updatedTitle']) ? False : mysqli_real_escape_string($db->getConnection(), $_POST['updatedTitle']));
     $updatedDescription = (empty($_POST['updatedDescription']) ? False : mysqli_real_escape_string($db->getConnection(), $_POST['updatedDescription']));
@@ -35,26 +35,4 @@
     if($updatedTitleStatus || $updatedDescriptionStatus){
         exit(header('Location: ../index.php?update=success'));
     }
-
-    // if(!$updatedTitleIsEmpty){
-    //     $sql = 'UPDATE Tasks SET title="' . $updatedTitleIsEmpty . '" WHERE id=' . $idToUpdate;
-    //     $result = $db->queryDatabase($sql);
-
-    //     if(!$result){
-    //         exit(header('Location: ../index.php?updatedTitle=failed'));
-    //     } else {
-    //         exit(header('Location: ../index.php?updatedTitle=success'));
-    //     }
-    // }
-
-    // if(!$updatedDescriptionIsEmpty){
-    //     $sql = 'UPDATE Tasks SET description="' . $updatedDescriptionIsEmpty . '" WHERE id=' . $idToUpdate;
-    //     $result = $db->queryDatabase($sql);
-
-    //     if(!$result){
-    //         exit(header('Location: ../index.php?updatedDescription=failed'));
-    //     } else {
-    //         exit(header('Location: ../index.php?updatedDescription=success'));
-    //     }
-    // }
 ?>

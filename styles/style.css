@@ -15,8 +15,8 @@ h1 {
 }
 
 .box textarea + button[type=submit]:hover {
-    border: #028058 ;
-    background-color: #028058 ;
+    border: #028058;
+    background-color: #028058;
 }
 
 .box button{
@@ -89,7 +89,31 @@ th, td{
 
 tr:hover {
     background-color: #B4DAFF;
-    /* color: #B4DAFF; */
+}
+
+.box2 {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+}
+
+.box2 input {
+    width: 10%;
+    height: 42px;
+    border: solid #0061D5;
+}
+
+.box2 button {
+    width: 88.8%;
+    border: solid #0061D5;
+    height: 50px;
+}
+
+.box2 button:hover {
+    border: #028058;
+    color: white;
+    background-color: #028058;
 }
 
 /* .note {
