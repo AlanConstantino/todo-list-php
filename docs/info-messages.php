@@ -16,7 +16,13 @@
     if (strpos($full_url, 'delete=success')){
         exit('Successfully deleted note.');
     }
-    if (strpos($full_url, 'idToDelete=empty')){
+    if (strpos($full_url, 'idToDelete=empty') || strpos($full_url, 'idToUpdate=empty')){
         exit('You didn&rsquo;t specify a number.');
+    }
+    if (strpos($full_url, 'updated=empty')){
+        exit('You didn&rsquo;t update anything.');
+    }
+    if (strpos($full_url, 'update=success')){
+        exit('You successfully updated the title and/or description.');
     }
 ?>

@@ -1,3 +1,7 @@
+body {
+    background-color: #FFDEB4;
+}
+
 h1 {
     color: #0061D5;
     text-align: center;
@@ -65,6 +69,7 @@ h1 {
 }
 
 table {
+    background-color: white;
     width: 50%;
     border: solid #0061D5;
     margin: auto;
@@ -83,8 +88,13 @@ th, td{
 }
 
 tr:hover {
-    background-color: #f5f5f5;
+    background-color: #B4DAFF;
+    /* color: #B4DAFF; */
 }
+
+/* .note {
+    color: yellowgreen;
+} */
 
 /* will have to use javascript to show/hide error messages */
 

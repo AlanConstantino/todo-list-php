@@ -24,5 +24,10 @@
             <input type="number" name="idToDelete" placeholder="Id To delete">
             <button type="submit">Delete</button>
         </form>
+
+        <form class="box2" action="selected-note.php" method="POST">
+            <input type="number" name="idToUpdate" placeholder="Id To update">
+            <button type="submit">Update</button>
+        </form>
     </body>
 </html>
