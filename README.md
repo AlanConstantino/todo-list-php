@@ -1,2 +1,2 @@
 # todo-list-php
-Todo list written in php
+A web app that allows you to write down notes.
