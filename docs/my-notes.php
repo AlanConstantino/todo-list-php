@@ -20,9 +20,11 @@
             </thead>
         </table>
         <form class="box" action="delete-note.php" method="POST">
-            <button type="submit" formaction="../index.php">Go back</button>
-            <input type="number" name="idToDelete" placeholder="Id To delete">
-            <button type="submit">Delete</button>
+            <button id="button" type="submit">Go back</button>
+            <div class="container">
+                <input type="number" name="idToDelete" placeholder="Id To delete">
+                <button id="deleteButton" type="submit">Delete</button>
+            </div>
         </form>
 
         <form class="box2" action="selected-note.php" method="POST">

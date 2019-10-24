@@ -8,18 +8,11 @@ h1 {
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
+    display: block;
+    margin: auto;
 }
 
-.box textarea + button[type=submit]:hover {
-    border: #028058;
-    background-color: #028058;
-}
-
-.box button{
+#button{
     display: block;
     text-align: center;
     width: 50%;
@@ -29,12 +22,12 @@ h1 {
     border: solid #0061D5;
 }
 
-.box button:hover {
+#button:hover {
     background-color: #0061D5;
     color: white;
 }
 
-.box input{
+#title {
     display: block;
     outline: none;
     margin: auto;
@@ -44,6 +37,7 @@ h1 {
     border: solid #0061D5;
 }
 
+/* description box */
 .box textarea{
     font-size: 30;
     display: block;
@@ -57,11 +51,29 @@ h1 {
     border: solid #0061D5;
 }
 
-.box input[type=number] {
+/* container for the delete button */
+.container {
+    display: block;
+    margin: auto;
     margin-top: 20px;
-    width: 10%;
+    width: 50%;
 }
 
+/* id to delete */
+.container input {
+    border: solid #0061D5;
+    width: 10%;
+    height: 41.5px;
+}
+
+/* delete button */
+.container button {
+    width: 88.8%;
+    border: solid #0061D5;
+    height: 50px;
+}
+
+/* delete button */
 .box input + button[type=submit]:hover {
     border: #BD1148;
     background-color: #BD1148;
@@ -87,6 +99,7 @@ th, td{
     border-bottom: 1px solid black;
 }
 
+/* when hovering over a table row */
 tr:hover {
     background-color: #B4DAFF;
 }
@@ -98,37 +111,53 @@ tr:hover {
     width: 50%;
 }
 
+/* id to update box */
 .box2 input {
     width: 10%;
-    height: 42px;
+    height: 41.5px;
     border: solid #0061D5;
 }
 
+/* update button */
 .box2 button {
     width: 88.8%;
     border: solid #0061D5;
     height: 50px;
 }
 
+/* when hovering over the update button */
 .box2 button:hover {
     border: #028058;
     color: white;
     background-color: #028058;
 }
 
-/* .note {
-    color: yellowgreen;
-} */
+/* how the chosen note will be displayed */
+.note {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    border: solid #0061D5;
+    background-color: white;
+    text-align: center;
+}
+
+/* description of the note displayed */
+.note p {
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+}
 
 /* will have to use javascript to show/hide error messages */
 
- /* .message {
+.message {
     display: block;
     text-align: center;
-    border: solid #BD1148 ;
-    background-color: #BD1148 ;
-    color: white;
+    color: black;
     margin: auto;
     margin-top: 50px;
     width: 80%;
-} */
+    font-size: 20px;
+}

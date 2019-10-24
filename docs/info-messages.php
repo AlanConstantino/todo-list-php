@@ -25,4 +25,7 @@
     if (strpos($full_url, 'update=success')){
         exit('You successfully updated the title and/or description.');
     }
+    if (strpos($full_url, 'idToDelete=dne')){
+        exit('The id you entered is not valid.');
+    }
 ?>

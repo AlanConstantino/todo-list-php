@@ -9,10 +9,10 @@
     <body>
         <h1>Add to my todo list</h1>
         <form class="box" autocomplete="off" action="/docs/add-to-list.php" method="POST">
-            <input type="text" name="title" placeholder="Title">
+            <input id="title" type="text" name="title" placeholder="Title">
             <textarea name="description" placeholder="Description"></textarea>
-            <button type="submit">Add</button>
-            <button type="submit" formaction="docs/my-notes.php">View My Notes</button>
+            <button id="button" type="submit">Add</button>
+            <button id="button" type="submit" formaction="docs/my-notes.php">View My Notes</button>
         </form>
         
         <div class="message">
